@@ -1,0 +1,9 @@
+<?php
+
+define("USERNAME", "datusername");
+define("PASSWORD", "datpassword");
+define("DATABASE", "datdatabase");
+define("DATASOURCE", "datdatasource.net");
+
+mysql_connect(DATASOURCE, USERNAME, PASSWORD);
+@mysql_select_db(DATABASE) or die("Unable to select database");
